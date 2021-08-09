@@ -1,0 +1,15 @@
+spring:
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  elasticsearch:
+    rest:
+      uris: http://localhost:9200
+      read-timeout: 10s
+      username: admin
+      password: admin
+logging:
+  level:
+    root: INFO
+    org.springframework.web: TRACE
